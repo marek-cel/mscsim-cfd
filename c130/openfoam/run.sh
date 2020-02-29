@@ -9,24 +9,24 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-export MODEL_NAME=c130_tail_off
-export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-./iterateAngleOfAttack.sh
+# export MODEL_NAME=c130_tail_off
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# ./iterateAngleOfAttack.sh
 
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 # ./iterateAngleOfAttack.sh
-# 
+
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_tail_off_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 # ./iterateAngleOfAttack.sh
-# 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_tail_off_flaps_30_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+
+cd $EXEC_DIR
+export MODEL_NAME=c130_flaps_35_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+./iterateAngleOfAttack.sh
 
 ################################################################################
 

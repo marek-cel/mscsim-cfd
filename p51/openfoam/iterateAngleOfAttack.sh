@@ -25,7 +25,12 @@ function runCase()
 
 function run()
 {
-    for i in {-180..-30..10}
+    for i in -180 -150 -120
+    do
+      runCase $i
+    done
+    
+    for i in {-90..-30..10}
     do
       runCase $i
     done
@@ -45,7 +50,12 @@ function run()
       runCase $i
     done
 
-    for i in {30..180..10}
+    for i in {30..90..10}
+    do
+      runCase $i
+    done
+    
+    for i in 120 150 180
     do
       runCase $i
     done
