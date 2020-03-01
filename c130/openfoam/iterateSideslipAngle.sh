@@ -14,7 +14,7 @@ function runCase()
     rm -rf $DEST_DIR
     cp -r case $DEST_DIR
     rm -f $DEST_DIR/system/forceCoeffs
-    cp case_sideslip/system/forceCoeffs system/forceCoeffs
+    cp case_sideslip/system/forceCoeffs $DEST_DIR/system/forceCoeffs
     surfaceTransformPoints -rollPitchYaw "( 0 0 $1 )" $MODEL_FILE $DEST_DIR/constant/triSurface/model.stl
     cd $DEST_DIR
     ./run.sh
