@@ -20,13 +20,13 @@ forceCoeffs1
     patches         (model);
     rho             rhoInf;      // Indicates incompressible
     rhoInf          1.0;         // Redundant for incompressible
-    liftDir         (0 0 1);
+    liftDir         (0 1 0);
     dragDir         (1 0 0);
     CofR            (0 0 0);
-    pitchAxis       (0 1 0);
-    magUInf         150.0;
-    lRef            4.16;        // Mean aerodynamic chord
-    Aref            162.12;      // Wing area (half)
+    pitchAxis       (0 0 1);
+    magUInf         50.0;
+    lRef            1.49;        // Mean aerodynamic chord
+    Aref            16.17;       // Wing area
     /*
     binData
     {
