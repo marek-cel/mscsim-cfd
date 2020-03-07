@@ -75,9 +75,9 @@ runCaseSideslipAngle 0
 cd $EXEC_DIR
 export MODEL_NAME=c130_rudder_30_full
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-runCaseSideslipAngle -3
+runCaseSideslipAngle -5
 runCaseSideslipAngle 0
-runCaseSideslipAngle 3
+runCaseSideslipAngle 5
 
 ################################################################################
 
