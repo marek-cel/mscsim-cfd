@@ -16,7 +16,7 @@ FoamFile
 
 rb_x_min -10.0;
 rb_x_max  25.0;
-rb_y_min   0.0;
+rb_y_min -25.0;
 rb_y_max  25.0;
 rb_z_min -15.0;
 rb_z_max  15.0;

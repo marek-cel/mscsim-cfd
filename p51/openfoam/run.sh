@@ -2,6 +2,10 @@
 
 ################################################################################
 
+source ../../common_openfoam.sh
+
+################################################################################
+
 TIME_0=$(date +%s)
 echo $(date +%Y-%m-%d\ %H:%M:%S) - Computations started
 
@@ -11,34 +15,39 @@ export EXEC_DIR=$(pwd)
 
 # export MODEL_NAME=p51_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
 
 # cd $EXEC_DIR
 # export MODEL_NAME=p51_tail_off_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
+
+# cd $EXEC_DIR
+# export MODEL_NAME=p51_flaps_30_half
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# iterateAngleOfAttack
 
 cd $EXEC_DIR
-export MODEL_NAME=p51_flaps_30_half
+export MODEL_NAME=p51_gear_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-./iterateAngleOfAttack.sh
+iterateAngleOfAttack
 
 # cd $EXEC_DIR
 # export MODEL_NAME=p51_elevator_10_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
 
 ################################################################################
 
 # cd $EXEC_DIR
 # export MODEL_NAME=p51
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateSideslipAngle.sh
+# iterateSideslipAngle
 # 
 # cd $EXEC_DIR
 # export MODEL_NAME=p51_tail_off
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateSideslipAngle.sh
+# iterateSideslipAngle
 
 ################################################################################
 

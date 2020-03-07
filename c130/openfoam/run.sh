@@ -2,6 +2,10 @@
 
 ################################################################################
 
+source ../../common_openfoam.sh
+
+################################################################################
+
 TIME_0=$(date +%s)
 echo $(date +%Y-%m-%d\ %H:%M:%S) - Computations started
 
@@ -9,36 +13,60 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-# export MODEL_NAME=c130_tail_off
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
-
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
 
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_tail_off_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
+
+# cd $EXEC_DIR
+# export MODEL_NAME=c130_flaps_18_half
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# iterateAngleOfAttack
+# runCaseAngleOfAttack -121
+# runCaseAngleOfAttack -89
+# runCaseAngleOfAttack 61
+# runCaseAngleOfAttack 89
 
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_flaps_35_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
+# runCaseAngleOfAttack -89
+# runCaseAngleOfAttack 89
+
+# cd $EXEC_DIR
+# export MODEL_NAME=c130_gear
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# iterateAngleOfAttack_Short
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_gear
+export MODEL_NAME=c130_elevator_30_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-./iterateAngleOfAttack.sh
+runCaseAngleOfAttack 0
 
 ################################################################################
 
 # cd $EXEC_DIR
 # export MODEL_NAME=c130_full
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateSideslipAngle.sh
+# iterateSideslipAngle
+
+################################################################################
+
+cd $EXEC_DIR
+export MODEL_NAME=c130_ailerons_max_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseSideslipAngle 0
+
+cd $EXEC_DIR
+export MODEL_NAME=c130_rudder_30_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseSideslipAngle 0
 
 ################################################################################
 

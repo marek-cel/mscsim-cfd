@@ -2,6 +2,10 @@
 
 ################################################################################
 
+source ../../common_openfoam.sh
+
+################################################################################
+
 TIME_0=$(date +%s)
 echo $(date +%Y-%m-%d\ %H:%M:%S) - Computations started
 
@@ -11,17 +15,17 @@ export EXEC_DIR=$(pwd)
 
 export MODEL_NAME=f16_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-./iterateAngleOfAttack.sh
+iterateAngleOfAttack
 
 # cd $EXEC_DIR
 # export MODEL_NAME=f16_flaps_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
 
 # cd $EXEC_DIR
 # export MODEL_NAME=f16_gear_half
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# ./iterateAngleOfAttack.sh
+# iterateAngleOfAttack
 
 ################################################################################
 
