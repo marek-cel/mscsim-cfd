@@ -47,7 +47,9 @@ export EXEC_DIR=$(pwd)
 cd $EXEC_DIR
 export MODEL_NAME=c130_elevator_30_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseAngleOfAttack -5
 runCaseAngleOfAttack 0
+runCaseAngleOfAttack 5
 
 ################################################################################
 
@@ -61,12 +63,16 @@ runCaseAngleOfAttack 0
 cd $EXEC_DIR
 export MODEL_NAME=c130_ailerons_max_full
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseSideslipAngle -3
 runCaseSideslipAngle 0
+runCaseSideslipAngle 3
 
 cd $EXEC_DIR
 export MODEL_NAME=c130_rudder_30_full
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseSideslipAngle -3
 runCaseSideslipAngle 0
+runCaseSideslipAngle 3
 
 ################################################################################
 
