@@ -13,36 +13,43 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=c130_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_tail_off_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=c130_tail_off_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
+runCaseAngleOfAttack -161
+runCaseAngleOfAttack -91
+runCaseAngleOfAttack -61
+runCaseAngleOfAttack -16
+runCaseAngleOfAttack 91
+runCaseAngleOfAttack 131
+runCaseAngleOfAttack 151
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_flaps_18_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
-# runCaseAngleOfAttack -121
-# runCaseAngleOfAttack -89
-# runCaseAngleOfAttack 61
-# runCaseAngleOfAttack 89
+cd $EXEC_DIR
+export MODEL_NAME=c130_flaps_18_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
+runCaseAngleOfAttack -121
+runCaseAngleOfAttack -89
+runCaseAngleOfAttack 61
+runCaseAngleOfAttack 89
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_flaps_35_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
-# runCaseAngleOfAttack -89
-# runCaseAngleOfAttack 89
+cd $EXEC_DIR
+export MODEL_NAME=c130_flaps_35_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
+runCaseAngleOfAttack -89
+runCaseAngleOfAttack 89
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_gear
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack_Short
+cd $EXEC_DIR
+export MODEL_NAME=c130_gear
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack_Short
 
 cd $EXEC_DIR
 export MODEL_NAME=c130_elevator_30_half
@@ -53,10 +60,10 @@ runCaseAngleOfAttack 5
 
 ################################################################################
 
-# cd $EXEC_DIR
-# export MODEL_NAME=c130_full
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateSideslipAngle
+cd $EXEC_DIR
+export MODEL_NAME=c130_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateSideslipAngle
 
 ################################################################################
 
