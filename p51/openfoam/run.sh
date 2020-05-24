@@ -30,7 +30,8 @@ export EXEC_DIR=$(pwd)
 cd $EXEC_DIR
 export MODEL_NAME=p51_gear_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-iterateAngleOfAttack
+# iterateAngleOfAttack_Short
+runCaseAngleOfAttack -6
 
 # cd $EXEC_DIR
 # export MODEL_NAME=p51_elevator_10_half
