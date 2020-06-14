@@ -13,42 +13,38 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-# export MODEL_NAME=p51_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+export MODEL_NAME=p51_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
-# cd $EXEC_DIR
-# export MODEL_NAME=p51_tail_off_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=p51_tail_off_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
-# cd $EXEC_DIR
-# export MODEL_NAME=p51_flaps_30_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=p51_flaps_30_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
 cd $EXEC_DIR
 export MODEL_NAME=p51_gear_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack_Short
-runCaseAngleOfAttack -6
+runCaseAngleOfAttack -5
+runCaseAngleOfAttack 0
+runCaseAngleOfAttack 5
 
-# cd $EXEC_DIR
-# export MODEL_NAME=p51_elevator_10_half
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=p51_elevator_10_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
 ################################################################################
 
-# cd $EXEC_DIR
-# export MODEL_NAME=p51
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateSideslipAngle
-# 
-# cd $EXEC_DIR
-# export MODEL_NAME=p51_tail_off
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateSideslipAngle
+cd $EXEC_DIR
+export MODEL_NAME=p51_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateSideslipAngle
 
 ################################################################################
 

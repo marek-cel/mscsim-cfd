@@ -49,7 +49,9 @@ runCaseAngleOfAttack 89
 cd $EXEC_DIR
 export MODEL_NAME=c130_gear
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-iterateAngleOfAttack_Short
+runCaseAngleOfAttack -5
+runCaseAngleOfAttack 0
+runCaseAngleOfAttack 5
 
 cd $EXEC_DIR
 export MODEL_NAME=c130_elevator_30_half
@@ -70,7 +72,9 @@ iterateSideslipAngle
 cd $EXEC_DIR
 export MODEL_NAME=c130_ailerons_max_full
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-runCaseMomentX
+runCaseMomentX -5
+runCaseMomentX 0
+runCaseMomentX 5
 
 cd $EXEC_DIR
 export MODEL_NAME=c130_rudder_30_full
