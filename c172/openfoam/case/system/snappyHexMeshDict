@@ -68,8 +68,8 @@ castellatedMeshControls
     // free-standing zone faces. Not used if there are no faceZones.
     allowFreeStandingZoneFaces true;
     
-    //
-    // ~~~~~~~~~~~~~~
+    // Refinement parameters
+    // ~~~~~~~~~~~~~~~~~~~~~
 
     // If local number of cells is >= maxLocalCells on any processor
     // switches from from refinement followed by balancing

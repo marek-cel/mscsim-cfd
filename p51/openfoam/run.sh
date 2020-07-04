@@ -39,12 +39,35 @@ export MODEL_NAME=p51_elevator_10_half
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
+cd $EXEC_DIR
+export MODEL_NAME=p51_elevator_30_half
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseAngleOfAttack -5
+runCaseAngleOfAttack 0
+runCaseAngleOfAttack 5
+
 ################################################################################
 
 cd $EXEC_DIR
 export MODEL_NAME=p51_full
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateSideslipAngle
+
+################################################################################
+
+cd $EXEC_DIR
+export MODEL_NAME=p51_ailerons_15_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseMomentX -5
+runCaseMomentX 0
+runCaseMomentX 5
+
+cd $EXEC_DIR
+export MODEL_NAME=p51_rudder_30_full
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseSideslipAngle -5
+runCaseSideslipAngle 0
+runCaseSideslipAngle 5
 
 ################################################################################
 
