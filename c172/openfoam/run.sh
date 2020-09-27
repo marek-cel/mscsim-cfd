@@ -13,29 +13,24 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-export MODEL_NAME=c172_half
+export MODEL_NAME=c172_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
 cd $EXEC_DIR
-export MODEL_NAME=c172_flaps_30_half
+export MODEL_NAME=c172_flaps_30
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
 cd $EXEC_DIR
-export MODEL_NAME=c172_tail_off_half
-export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-iterateAngleOfAttack
-
-cd $EXEC_DIR
-export MODEL_NAME=c172_tail_off_flaps_30_half
+export MODEL_NAME=c172_tail_off
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
 ################################################################################
 
 cd $EXEC_DIR
-export MODEL_NAME=c172_full
+export MODEL_NAME=c172_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateSideslipAngle
 

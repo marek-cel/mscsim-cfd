@@ -14,12 +14,12 @@ export EXEC_DIR=$(pwd)
 ################################################################################
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_half
+export MODEL_NAME=c130_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_tail_off_half
+export MODEL_NAME=c130_tail_off
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 runCaseAngleOfAttack -161
@@ -31,7 +31,7 @@ runCaseAngleOfAttack 131
 runCaseAngleOfAttack 151
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_flaps_18_half
+export MODEL_NAME=c130_flaps_18
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 runCaseAngleOfAttack -121
@@ -40,7 +40,7 @@ runCaseAngleOfAttack 61
 runCaseAngleOfAttack 89
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_flaps_35_half
+export MODEL_NAME=c130_flaps_35
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 runCaseAngleOfAttack -89
@@ -54,7 +54,7 @@ runCaseAngleOfAttack 0
 runCaseAngleOfAttack 5
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_elevator_30_half
+export MODEL_NAME=c130_elevator_30
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 runCaseAngleOfAttack -5
 runCaseAngleOfAttack 0
@@ -63,21 +63,21 @@ runCaseAngleOfAttack 5
 ################################################################################
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_full
+export MODEL_NAME=c130_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateSideslipAngle
 
 ################################################################################
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_ailerons_max_full
+export MODEL_NAME=c130_ailerons_max
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 runCaseMomentX -5
 runCaseMomentX 0
 runCaseMomentX 5
 
 cd $EXEC_DIR
-export MODEL_NAME=c130_rudder_30_full
+export MODEL_NAME=c130_rudder_30
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 runCaseSideslipAngle -5
 runCaseSideslipAngle 0

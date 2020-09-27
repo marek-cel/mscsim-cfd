@@ -149,6 +149,16 @@ function iterateAngleOfAttack_Short()
 
 ################################################################################
 
+function iterateAngleOfAttack_Heli()
+{
+    for i in -180 -150 -120 -90 -60 -30 -20 -10 -5 0 5 10 20 30 60 90 120 150 180
+    do
+      runCaseAngleOfAttack $i
+    done
+}
+
+################################################################################
+
 function iterateSideslipAngle()
 {
     for i in -90 -60 -30 -20 -10 -5  0  5  10  20  30  60  90

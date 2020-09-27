@@ -44,8 +44,8 @@ mpirun -np $(getNumberOfProcessors) renumberMesh -parallel -overwrite > log.renu
 echo "Running patchSummary in parallel using $(getNumberOfProcessors) processes"
 mpirun -np $(getNumberOfProcessors) patchSummary -parallel > log.patchSummary 2>&1
 
-echo "Running potentialFoam in parallel using $(getNumberOfProcessors) processes"
-mpirun -np $(getNumberOfProcessors) potentialFoam -parallel > log.potentialFoam 2>&1
+# echo "Running potentialFoam in parallel using $(getNumberOfProcessors) processes"
+# mpirun -np $(getNumberOfProcessors) potentialFoam -parallel > log.potentialFoam 2>&1
 
 echo "Running $(getApplication) in parallel using $(getNumberOfProcessors) processes"
 mpirun -np $(getNumberOfProcessors) $(getApplication) -parallel > log.$(getApplication) 2>&1
