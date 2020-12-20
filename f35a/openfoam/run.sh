@@ -29,10 +29,14 @@ export EXEC_DIR=$(pwd)
 # runCaseAngleOfAttack 41
 
 # cd $EXEC_DIR
+# export MODEL_NAME=f35a_flaps_le_20
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# iterateAngleOfAttack
+
+# cd $EXEC_DIR
 # export MODEL_NAME=f35a_flaps_te_30
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# runCaseAngleOfAttack 1
-# runCaseAngleOfAttack 5
+# iterateAngleOfAttack
 
 ################################################################################
 
@@ -41,11 +45,19 @@ export EXEC_DIR=$(pwd)
 # export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 # iterateSideslipAngle
 
+# cd $EXEC_DIR
+# export MODEL_NAME=f35a_rudder_20
+# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+# runCaseSideslipAngle -5
+# runCaseSideslipAngle 0
+# runCaseSideslipAngle 5
+
 ################################################################################
 
 cd $EXEC_DIR
 export MODEL_NAME=f35a_ailerons_20
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseMomentX -5
 runCaseMomentX 1
 runCaseMomentX 5
 
