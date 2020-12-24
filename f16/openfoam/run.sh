@@ -17,15 +17,15 @@ export MODEL_NAME=f16_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack
 
-# cd $EXEC_DIR
-# export MODEL_NAME=f16_flaps
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=f16_flaps
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
-# cd $EXEC_DIR
-# export MODEL_NAME=f16_gear
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack
+cd $EXEC_DIR
+export MODEL_NAME=f16_gear
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack
 
 ################################################################################
 

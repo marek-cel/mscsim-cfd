@@ -13,16 +13,23 @@ export EXEC_DIR=$(pwd)
 
 ################################################################################
 
-# cd $EXEC_DIR
-# export MODEL_NAME=aw101_complete
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack_Heli
+cd $EXEC_DIR
+export MODEL_NAME=aw101_complete
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack_Heli
 
-# cd $EXEC_DIR
-# export MODEL_NAME=aw101_tail_off
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack_Heli
-# runCaseAngleOfAttack 31
+cd $EXEC_DIR
+export MODEL_NAME=aw101_tail_off
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack_Heli
+runCaseAngleOfAttack 31
+
+cd $EXEC_DIR
+export MODEL_NAME=aw101_landing_gear
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+runCaseAngleOfAttack -5
+runCaseAngleOfAttack 0
+runCaseAngleOfAttack 5
 
 ################################################################################
 

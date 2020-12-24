@@ -17,17 +17,17 @@ export MODEL_NAME=r44_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateAngleOfAttack_Heli
 
-# cd $EXEC_DIR
-# export MODEL_NAME=r44_tail_off
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateAngleOfAttack_Heli
+cd $EXEC_DIR
+export MODEL_NAME=r44_tail_off
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateAngleOfAttack_Heli
 
 ################################################################################
 
-# cd $EXEC_DIR
-# export MODEL_NAME=r44_complete
-# export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
-# iterateSideslipAngle
+cd $EXEC_DIR
+export MODEL_NAME=r44_complete
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateSideslipAngle
 
 ################################################################################
 
