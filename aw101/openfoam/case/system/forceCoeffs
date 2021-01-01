@@ -25,7 +25,7 @@ forceCoeffs1
     CofR            (0 0 0);
     pitchAxis       (0 1 0);
     magUInf         70.0;
-    lRef            4.34;        // Fuselage width
+    lRef            19.3;        // Fuselage length
     Aref            9.24;        // Fuselage largest cross-section area
     /*
     binData

@@ -38,6 +38,11 @@ export MODEL_NAME=aw101_complete
 export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
 iterateSideslipAngle
 
+cd $EXEC_DIR
+export MODEL_NAME=aw101_tail_off
+export MODEL_FILE=$EXEC_DIR/models/stl/$MODEL_NAME.stl
+iterateSideslipAngle
+
 ################################################################################
 
 TIME_1=$(date +%s)

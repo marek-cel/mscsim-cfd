@@ -35,7 +35,9 @@ function runCaseSideslipAngle()
     ./run.sh
     cd $FOAM_RUN
     printf "%d\t" $1 &>> forceCoeffs_$MODEL_NAME.dat
-    tail -n 1 "$MODEL_NAME""_$1"/postProcessing/forceCoeffs1/0/forceCoeffs.dat &>> forceCoeffs_$MODEL_NAME.dat
+    tail -n 1 "$MODEL_NAME""_$1"/postProcessing/forceCoeffs1/0/forceCoeffs.dat &>> forceCoeffs1_$MODEL_NAME.dat
+    tail -n 1 "$MODEL_NAME""_$1"/postProcessing/forceCoeffs2/0/forceCoeffs.dat &>> forceCoeffs2_$MODEL_NAME.dat
+    tail -n 1 "$MODEL_NAME""_$1"/postProcessing/forceCoeffs3/0/forceCoeffs.dat &>> forceCoeffs3_$MODEL_NAME.dat
 }
 
 ################################################################################
