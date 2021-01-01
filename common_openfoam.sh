@@ -166,3 +166,14 @@ function iterateSideslipAngle()
       runCaseSideslipAngle $i
     done
 }
+
+
+################################################################################
+
+function iterateSideslipAngleMomentZ()
+{
+    for i in -90 -60 -30 -20 -10 -5  0  5  10  20  30  60  90
+    do
+      runCaseMomentZ $i
+    done
+}
