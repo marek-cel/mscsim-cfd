@@ -1,0 +1,16 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  6                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+// R44
+
+rd_magUInf  60.0;       // velocity at infinity
+rd_lRef     9.07;       // fuselage length
+rd_Aref_2   0.785;      // fuselage largest cross-section area (half)
+rd_Aref     1.57;       // fuselage largest cross-section area (full)
+
+// ************************************************************************* //

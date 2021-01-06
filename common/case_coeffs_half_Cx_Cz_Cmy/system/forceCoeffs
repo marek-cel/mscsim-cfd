@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  6                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+#include "include/referenceData"
+
+// ************************************************************************* //
+
+forceCoeffs_Cx_Cz_Cmy
+{
+    type            forceCoeffs;
+
+    libs            ("libforces.so");
+
+    writeControl    timeStep;
+    timeInterval    1;
+
+    log             yes;
+
+    patches         (model);
+    rho             rhoInf;      // Indicates incompressible
+    rhoInf          1.0;         // Redundant for incompressible
+    liftDir         (0 0 1);
+    dragDir         (1 0 0);
+    CofR            (0 0 0);
+    pitchAxis       (0 1 0);
+    magUInf         $rd_magUInf;
+    lRef            $rd_lRef;
+    Aref            $rd_Aref_2;
+}
+
+// ************************************************************************* //

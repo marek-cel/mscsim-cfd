@@ -6,6 +6,7 @@
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 
+// P-51
 
 flowVelocity    ( 110.0 0.0 0.0 );  // [m/s] flow velocity
 pressure        0.0;                // [m^2/s^2] kinematic pressure (p/rho)

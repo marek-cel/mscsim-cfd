@@ -1,0 +1,16 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  6                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+// F-35A
+
+rd_magUInf  180.0;      // velocity at infinity
+rd_lRef     4.52;       // Mean Aerodynamic Chord
+rd_Aref_2   21.365;     // wing area (half)
+rd_Aref     42.73;      // wing area (full)
+
+// ************************************************************************* //

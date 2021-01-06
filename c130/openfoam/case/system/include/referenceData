@@ -1,0 +1,16 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  6                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+// C-130
+
+rd_magUInf  150.0;      // velocity at infinity
+rd_lRef     4.16;       // Mean Aerodynamic Chord
+rd_Aref_2   81.06;      // wing area (half)
+rd_Aref     162.12;     // wing area (full)
+
+// ************************************************************************* //

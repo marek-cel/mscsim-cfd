@@ -6,6 +6,7 @@
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 
+// F-35A
 
 flowVelocity    ( 180.0 0.0 0.0 );  // [m/s] flow velocity
 pressure        0.0;                // [m^2/s^2] kinematic pressure (p/rho)
